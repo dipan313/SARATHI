@@ -228,7 +228,7 @@ def gallery():
 def main():
     global sound
     args = get_args()
-    sound = pygame.mixer.Sound('driver_state_detection/640g_alarm-83662.mp3')
+    sound = pygame.mixer.Sound('640g_alarm-83662.mp3')
     detector, eye_det, head_pose = load_models(args.camera_params)
     scorer = AttScorer(
         t_now=time.perf_counter(), ear_thresh=args.ear_thresh, gaze_time_thresh=args.gaze_time_thresh,
